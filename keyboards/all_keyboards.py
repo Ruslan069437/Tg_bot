@@ -6,3 +6,9 @@ def main_keyboard() -> ReplyKeyboardMarkup:
     kb.button(text="Какой уровень лояльности")
     kb.button(text="Меню")
     return kb.as_markup(resize_keyboard=True)
+
+def menu_keyboard()->ReplyKeyboardMarkup:
+    kb = ReplyKeyboardBuilder
+    kb.button(text="Кофе")
+    kb.button(text="Чай")
+    kb.button(text="Сладости")
